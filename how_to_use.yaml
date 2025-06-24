@@ -1,0 +1,31 @@
+TIPS PENGGUNAAN:
+
+1. DATASET:
+   - Download dataset dari Kaggle yang sudah disebutkan
+   - Gunakan dataset yang berisi puisi/lirik dalam bahasa yang diinginkan
+   - Semakin besar dataset, semakin baik hasil generation
+
+2. PREPROCESSING:
+   - Sesuaikan fungsi clean_text() dengan kebutuhan
+   - Atur vocab_size sesuai dengan ukuran dataset
+   - Sequence length yang optimal biasanya 20-50 kata
+
+3. MODEL:
+   - Tambahkan layer LSTM untuk model yang lebih kompleks
+   - Sesuaikan embedding_dim dengan ukuran vocabulary
+   - Gunakan dropout untuk mencegah overfitting
+
+4. GENERATION:
+   - Temperature rendah (0.5-0.7): output lebih konservatif/prediktabel
+   - Temperature tinggi (1.0-1.5): output lebih kreatif/random
+   - Seed text yang baik akan menghasilkan output yang lebih baik
+
+5. TRAINING:
+   - Gunakan early stopping untuk mencegah overfitting
+   - Monitor validation loss untuk evaluasi
+   - Save model terbaik untuk inference
+
+6. UNTUK DATASET BESAR:
+   - Gunakan batch training untuk efisiensi memory
+   - Pertimbangkan menggunakan generator untuk loading data
+   - Gunakan GPU jika tersedia untuk training yang lebih cepat
